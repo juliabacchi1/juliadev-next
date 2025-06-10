@@ -1,14 +1,22 @@
+"use client";
+
 import Image from "next/image";
 import Button from "./Button";
 import { Download } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section className="w-full min-h-screen bg-custom-gradient flex items-center justify-center px-8 text-gray-800">
+    <section
+      id="hero"
+      className="w-full min-h-screen bg-custom-gradient flex items-center justify-center px-8 text-gray-800"
+    >
       <div className="container mx-auto max-w-4xl lg:max-w-5xl flex flex-col md:flex-row items-center gap-6 md:gap-12">
         {/* Lado esquerdo - Texto e botões */}
         <div className="md:w-1/2 space-y-8">
-          <h1 className="text-5xl md:text-[4rem] leading-[1.15] md:leading-[1.1]">
+          <h1
+            className="leading-[1.15] md:leading-[1.1]"
+            style={{ fontSize: "clamp(2.5rem, 6vw, 4rem)" }}
+          >
             Desenvolvendo{" "}
             <span className="bg-gradient-to-r from-orange-400 to-pink-500 bg-clip-text text-transparent">
               tecnologia
@@ -17,10 +25,26 @@ export default function HeroSection() {
           </h1>
 
           <div className="flex w-3/4 gap-4">
-            <Button variant="default" className="flex-1">
+            <Button
+              variant="default"
+              className="flex-1"
+              onClick={() => {
+                const section = document.getElementById("sobre");
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+            >
               sobre mim
             </Button>
-            <Button variant="gray" className="flex-1 hidden md:inline-flex">
+
+            <Button
+              variant="gray"
+              className="flex-1 hidden md:inline-flex"
+              href="/curriculo.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               currículo
             </Button>
           </div>

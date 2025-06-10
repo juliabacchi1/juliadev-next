@@ -12,6 +12,11 @@ module.exports = {
         sans: ["var(--font-montserrat)", ...defaultTheme.fontFamily.sans],
         serif: ["var(--font-gloock)", ...defaultTheme.fontFamily.serif],
       },
+      colors: {
+        aboutleft: "#fcf5ec",
+        aboutright: "#eea595",
+        abouttext: "#ba4b2e",
+      },
     },
   },
   plugins: [],

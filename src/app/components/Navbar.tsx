@@ -27,12 +27,15 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-md">
+    <nav className="fixed top-0 left-0 w-full z-50">
       <div className="mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo + Texto */}
-        <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          className="flex items-center space-x-3"
+        <ScrollLink
+          to="hero"
+          smooth={true}
+          duration={500}
+          className="flex items-center space-x-3 cursor-pointer"
+          onClick={() => setMenuOpen(false)} // fecha menu no mobile se tiver aberto
         >
           <Image src="/logo.svg" alt="Logo" width={32} height={32} />
           <motion.span
@@ -43,7 +46,7 @@ export default function Navbar() {
           >
             Portfolio Julia Bacchi
           </motion.span>
-        </button>
+        </ScrollLink>
 
         {/* Mobile Toggle */}
         <button
