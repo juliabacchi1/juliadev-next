@@ -33,16 +33,16 @@ export default function AboutSection() {
               alt="Foto de perfil de Júlia Bacchi"
               width={250}
               height={300}
-              className="object-contain rounded-2xl shadow-xl mb-4 w-[clamp(180px,40vw,280px)"
+              className="object-contain rounded-2xl shadow-xl mb-4 w-[clamp(230px,40vw,280px)]"
             />
           </div>
 
           <h2 className="font-bold leading-snug md:leading-tight font-serif text-abouttext text-[clamp(2rem,6vw,2.75rem)] md:text-6xl">
             Olá, seja <br className="hidden md:block" />
-            Bem-vindo
+            bem-vindo
           </h2>
 
-          <p className="text-base md:text-lg leading-relaxed">
+          <p className="text-[clamp(1rem,2.5vw,1.125rem)] md:text-lg leading-relaxed">
             Sou Júlia Bacchi, desenvolvedora front-end, libriana, mãe de pet e
             apaixonada por tecnologia. Acredito que a tecnologia deve ser
             intuitiva, impactante e uma força para o bem.
@@ -54,12 +54,21 @@ export default function AboutSection() {
           {/* Botões */}
           <div className="flex w-3/4 md:w-3/5 gap-4">
             <Button
-              variant="default"
-              className="flex-1 text-abouttext hover:bg-abouttext/50 hover:text-white"
+              variant="red"
+              className="flex-1"
+              onClick={() => {
+                const section = document.getElementById("tecnologias");
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
             >
               tecnologias
             </Button>
-            <Button variant="gray" className="flex-1 hidden md:inline-flex text-white bg-abouttext/50 hover:text-gray-800">
+            <Button
+              variant="pink"
+              className="flex-1 hidden md:inline-flex"
+            >
               me chama
             </Button>
           </div>

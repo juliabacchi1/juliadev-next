@@ -2,14 +2,14 @@ import React from "react";
 
 type ButtonAsAnchor = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
   href: string;
-  variant?: "default" | "gray";
+  variant?: "default" | "gray" | "red" | "pink";
   children: React.ReactNode;
   className?: string;
 };
 
 type ButtonAsButton = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   href?: undefined;
-  variant?: "default" | "gray";
+  variant?: "default" | "gray" | "red" | "pink";
   children: React.ReactNode;
   className?: string;
 };
@@ -23,32 +23,32 @@ const Button = ({
   ...props
 }: ButtonProps) => {
   const baseStyles =
-    "font-medium text-gray-800 flex justify-center px-8 py-3 rounded-full shadow hover:shadow-md transition-all duration-300";
+    "flex justify-center px-8 py-3 rounded-full shadow hover:shadow-md transition-all duration-300";
 
   const variantStyles = {
-    default: "font-semibold bg-white hover:bg-gray-100/80",
-    gray: "font-normal hover:font-semibold bg-gray-100/80 hover:bg-white",
+    default: "font-semibold text-gray-800 bg-white hover:bg-gray-100/80",
+    gray: "font-normal hover:font-semibold text-gray-800 bg-gray-100/80 hover:bg-white",
+    red: "font-semibold bg-white text-abouttext hover:bg-abouttext/50 hover:text-white",
+    pink: "font-normal hover:font-semibold bg-abouttext/50 text-white hover:bg-white hover:text-abouttext",
   };
 
   const classes = `${baseStyles} ${variantStyles[variant]} ${className}`;
 
   if ("href" in props && props.href) {
-    // Renderiza <a> com estilos de botão
     return (
       <a
-        className={classes}
         {...(props as React.AnchorHTMLAttributes<HTMLAnchorElement>)}
+        className={classes}
       >
         {children}
       </a>
     );
   }
 
-  // Renderiza <button>
   return (
     <button
-      className={classes}
       {...(props as React.ButtonHTMLAttributes<HTMLButtonElement>)}
+      className={classes}
     >
       {children}
     </button>
