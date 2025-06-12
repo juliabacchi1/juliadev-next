@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Button from "./Button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -107,7 +108,13 @@ const WorkSection = () => {
 
       {/* Conteúdo do projeto */}
       <div className="w-full md:w-[70%] flex flex-col md:flex-row md:px-12 gap-6">
-        <div className="w-full flex flex-col sm:flex-row gap-4 p-4 sm:p-6 rounded-xl bg-gray-50 shadow-md">
+        <motion.div
+          className="w-full flex flex-col sm:flex-row gap-4 p-4 sm:p-6 rounded-xl bg-gray-50 shadow-md"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
           {/* Imagem */}
           <div className="relative w-full sm:w-1/2 h-[200px] sm:h-[250px] md:h-[400px] lg:h-[550px]">
             <a
@@ -155,7 +162,7 @@ const WorkSection = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       {/* Botão "me chama" — visível só no mobile */}

@@ -16,6 +16,7 @@ module.exports = {
         aboutleft: "#fcf5ec",
         aboutright: "#eea595",
         abouttext: "#ba4b2e",
+        contactstyle: "#156669",
       },
     },
   },
