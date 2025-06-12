@@ -79,13 +79,13 @@ const WorkSection = () => {
       aria-labelledby="works-title"
       className="w-full min-h-screen bg-white text-gray-800 flex flex-col md:flex-row items-center md:justify-center px-6 py-16 md:py-0"
     >
-      <div className="w-full md:w-[30%] mb-4 md:my-2 md:mx-10 flex flex-col">
+      <div className="w-full md:w-[30%] md:my-2 md:mx-10 flex flex-col">
         <h2 className="leading-snug md:leading-tight text-[clamp(2rem,6vw,3.5rem)] md:text-6xl mb-6">
           Trabalhos
         </h2>
         <p className="text-[clamp(1rem,2.5vw,1.125rem)] md:text-lg leading-relaxed md:text-start text-gray-800 mb-8 max-w-md">
           Projetos selecionados que demonstram minha evolução e abordagem
-          criativa
+          criativa.
         </p>
 
         {/* Botão "me chama" - visível só no desktop */}

@@ -65,7 +65,16 @@ export default function AboutSection() {
             >
               tecnologias
             </Button>
-            <Button variant="pink" className="flex-1 hidden md:inline-flex">
+            <Button
+              variant="pink"
+              className="flex-1 hidden md:inline-flex"
+              onClick={() => {
+                const section = document.getElementById("contato");
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+            >
               me chama
             </Button>
           </div>
