@@ -23,3 +23,21 @@ body {
   background-blend-mode: overlay;
   min-height: 100vh;
 }
+
+@layer utilities {
+  @media (min-width: 810px) and (max-width: 840px) {
+    .ipad-fix {
+      width: 100% !important;
+      min-width: 140px !important;
+    }
+  }
+}
+
+@layer utilities {
+  @media (min-width: 400px) and (max-width: 500px) {
+    .devicebig {
+      width: 280px !important;
+      height: auto;
+    }
+  }
+}

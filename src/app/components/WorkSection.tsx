@@ -3,17 +3,10 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Button from "./Button";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const WorkSection = () => {
   const projects = [
-    {
-      name: "DarkMoon",
-      description:
-        "Site institucional moderno e responsivo, desenvolvido com foco em performance e identidade visual impactante. Construído com Next.js e TailwindCSS.",
-      view: "/images/darkmoon.webp",
-      alt: "Visualização DarkMoon",
-      link: "https://portal-darkmoon.vercel.app/",
-    },
     {
       name: "Bora!",
       description:
@@ -21,6 +14,14 @@ const WorkSection = () => {
       view: "/images/bora.webp",
       alt: "Visualização Bora!",
       link: "https://bora-app-jet.vercel.app/",
+    },
+    {
+      name: "DarkMoon",
+      description:
+        "Site institucional moderno e responsivo, desenvolvido com foco em performance e identidade visual impactante. Construído com Next.js e TailwindCSS.",
+      view: "/images/darkmoon.webp",
+      alt: "Visualização DarkMoon",
+      link: "https://portal-darkmoon.vercel.app/",
     },
     {
       name: "Portal Rick and Morty",
@@ -76,9 +77,9 @@ const WorkSection = () => {
     <section
       id="trabalhos"
       aria-labelledby="works-title"
-      className="w-full min-h-screen bg-white flex flex-col md:flex-row items-center justify-center px-6"
+      className="w-full min-h-screen bg-white text-gray-800 flex flex-col md:flex-row items-center md:justify-center px-6 py-16 md:py-0"
     >
-      <div className="w-full md:w-[30%] my-16 mb-4 md:my-2 md:mx-10 flex flex-col items-center md:items-start text-left">
+      <div className="w-full md:w-[30%] mb-4 md:my-2 md:mx-10 flex flex-col">
         <h2 className="leading-snug md:leading-tight text-[clamp(2rem,6vw,3.5rem)] md:text-6xl mb-6">
           Trabalhos
         </h2>
@@ -86,9 +87,11 @@ const WorkSection = () => {
           Projetos selecionados que demonstram minha evolução e abordagem
           criativa
         </p>
-        <div className="flex">
+
+        {/* Botão "me chama" - visível só no desktop */}
+        <div className="hidden md:flex w-full">
           <Button
-            variant="pink"
+            variant="work"
             className="w-3/4 md:w-full md:max-w-[200px]"
             onClick={() => {
               const section = document.getElementById("contato");
@@ -100,51 +103,75 @@ const WorkSection = () => {
             me chama
           </Button>
         </div>
-        <p className="text-sm text-gray-500 mt-6">
-          {index + 1}/{projects.length}
-        </p>
       </div>
 
-      <div className="w-full md:w-[70%] flex flex-col md:flex-row items-center md:items-start px-4 md:px-8 lg:px-12 gap-6">
-        <a
-          href={link}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-full md:w-1/2 flex justify-center"
-        >
-          <Image
-            src={view}
-            alt={alt}
-            width={800}
-            height={600}
-            className="w-full h-auto max-h-[400px] md:max-h-[500px] lg:max-h-[600px] object-contain"
-            priority={index === 0}
-          />
-        </a>
+      {/* Conteúdo do projeto */}
+      <div className="w-full md:w-[70%] flex flex-col md:flex-row md:px-12 gap-6">
+        <div className="w-full flex flex-col sm:flex-row gap-4 p-4 sm:p-6 rounded-xl bg-gray-50 shadow-md">
+          {/* Imagem */}
+          <div className="relative w-full sm:w-1/2 h-[200px] sm:h-[250px] md:h-[400px] lg:h-[550px]">
+            <a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full h-full"
+            >
+              <Image
+                src={view}
+                alt={alt}
+                fill
+                className="object-contain"
+                priority={index === 0}
+                sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+              />
+            </a>
+          </div>
 
-        <div className="w-full md:w-1/2 flex flex-col justify-start items-center md:items-start text-left mt-2 md:mt-8 pr-0 md:pr-4 lg:pr-8">
-          <h3 className="text-xl md:text-xl lg:text-2xl font-semibold mb-2 md:mb-3">
-            {name}
-          </h3>
-          <p className="text-sm md:text-base text-center md:text-start text-gray-700 pb-6 md:pb-8 lg:pb-10">
-            {description}
-          </p>
-          <div className="flex flex-col">
-            <div className="flex w-3/4 gap-4">
-              <Button variant="red" className="flex-1" onClick={prevProject}>
-                voltar
-              </Button>
-              <Button variant="red" className="flex-1" onClick={nextProject}>
-                próximo
-              </Button>
-            </div>
-            <div>
-              <p className="text-sm text-gray-500 mt-6">
-                {index + 1}/{projects.length}
-              </p>
+          {/* Texto + botões */}
+          <div className="w-full sm:w-1/2 flex flex-col justify-center">
+            <h3 className="text-xl font-semibold mb-3">{name}</h3>
+            <p className="text-sm md:text-base">{description}</p>
+            <div className="flex flex-col w-full mt-6">
+              <div className="flex gap-4 justify-start">
+                <Button
+                  variant="circle"
+                  onClick={prevProject}
+                  aria-label="Projeto anterior"
+                >
+                  <ChevronLeft size={20} />
+                </Button>
+                <Button
+                  variant="circle"
+                  onClick={nextProject}
+                  aria-label="Próximo projeto"
+                >
+                  <ChevronRight size={20} />
+                </Button>
+              </div>
+              <div className="mt-6">
+                <p className="text-sm text-gray-600 bg-gray-100 rounded-full px-3 py-1 w-fit">
+                  {index + 1} de {projects.length}
+                </p>
+              </div>
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Botão "me chama" — visível só no mobile */}
+      <div className="flex md:hidden w-full mt-8 justify-center">
+        <Button
+          variant="work"
+          className="w-3/4 max-w-xs"
+          onClick={() => {
+            const section = document.getElementById("contato");
+            if (section) {
+              section.scrollIntoView({ behavior: "smooth" });
+            }
+          }}
+        >
+          me chama
+        </Button>
       </div>
     </section>
   );

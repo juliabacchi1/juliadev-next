@@ -35,11 +35,11 @@ export default function Navbar() {
           smooth={true}
           duration={500}
           className="flex items-center space-x-3 cursor-pointer"
-          onClick={() => setMenuOpen(false)} // fecha menu no mobile se tiver aberto
+          onClick={() => setMenuOpen(false)}
         >
           <Image src="/logo.svg" alt="Logo" width={32} height={32} />
           <motion.span
-            initial={false}
+            initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: scrolled ? 0 : 1, x: scrolled ? -20 : 0 }}
             transition={{ duration: 0.4 }}
             className="text-lg font-semibold text-gray-800 origin-left hidden sm:inline-block"

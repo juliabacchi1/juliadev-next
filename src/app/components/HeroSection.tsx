@@ -13,6 +13,9 @@ export default function HeroSection() {
       <div className="container mx-auto max-w-4xl lg:max-w-5xl flex flex-col md:flex-row items-center gap-6 md:gap-12">
         {/* Lado esquerdo - Texto e botões */}
         <div className="md:w-1/2 space-y-8">
+          <h3 className="block md:hidden text-lg font-semibold">
+            Portfolio Julia Bacchi
+          </h3>
           <h1
             className="leading-[1.15] md:leading-[1.1]"
             style={{ fontSize: "clamp(2.5rem, 6vw, 4rem)" }}
@@ -24,7 +27,7 @@ export default function HeroSection() {
             com cara de lar
           </h1>
 
-          <div className="flex w-3/4 gap-4">
+          <div className="flex w-3/4 gap-4 ipad-fix">
             <Button
               variant="default"
               className="flex-1"
@@ -51,12 +54,13 @@ export default function HeroSection() {
         </div>
 
         {/* Lado direito - Imagem */}
-        <div className="md:w-1/2">
+        <div className="hidden md:block md:w-1/2">
           <div className="relative aspect-square w-full">
             <Image
               src="/computador.webp"
               alt="Computador com código"
               fill
+              sizes="100vw"
               className="object-cover"
               priority
             />
@@ -68,7 +72,8 @@ export default function HeroSection() {
       <div className="fixed bottom-4 right-4 md:hidden z-50">
         <a
           href="/curriculo.pdf"
-          download
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex items-center gap-2 px-4 py-2 bg-gray-800/80 text-white rounded-full shadow-lg text-sm font-medium hover:bg-gray-700 transition"
         >
           <Download size={20} />

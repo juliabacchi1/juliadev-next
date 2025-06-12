@@ -91,7 +91,7 @@ export default function TechSection() {
           src="/images/nuvem.webp"
           width={384}
           height={128}
-          className="absolute top-10 left-8 w-48 sm:w-64 md:w-80 lg:w-96 opacity-40"
+          className="absolute top-10 left-8 w-48 h-auto sm:w-64 md:w-80 lg:w-96 opacity-40"
           alt="nuvem decorativa"
         />
 
@@ -100,7 +100,7 @@ export default function TechSection() {
           src="/images/nuvem.webp"
           width={384}
           height={128}
-          className="absolute top-24 right-12 w-40 sm:w-56 md:w-72 lg:w-80 opacity-30 hidden md:block"
+          className="absolute top-24 right-12 w-40 h-auto sm:w-56 md:w-72 lg:w-80 opacity-30 hidden md:block"
           alt="nuvem decorativa"
         />
 
@@ -109,7 +109,7 @@ export default function TechSection() {
           src="/images/nuvem.webp"
           width={384}
           height={128}
-          className="absolute top-1/2 left-24 w-36 sm:w-48 md:w-60 lg:w-72 opacity-25 hidden md:block"
+          className="absolute top-1/2 left-24 w-36 h-auto sm:w-48 md:w-60 lg:w-72 opacity-25 hidden md:block"
           alt="nuvem decorativa"
         />
 
@@ -118,7 +118,7 @@ export default function TechSection() {
           src="/images/nuvem.webp"
           width={384}
           height={128}
-          className="absolute top-[65%] right-24 w-32 sm:w-40 md:w-52 lg:w-64 opacity-35"
+          className="absolute top-[65%] right-24 w-32 h-auto sm:w-40 md:w-52 lg:w-64 opacity-35"
           alt="nuvem decorativa"
         />
 
@@ -127,7 +127,7 @@ export default function TechSection() {
           src="/images/nuvem.webp"
           width={384}
           height={128}
-          className="absolute top-[35%] left-1/2 -translate-x-1/2 w-40 sm:w-52 md:w-64 lg:w-72 opacity-15"
+          className="absolute top-[35%] left-1/2 -translate-x-1/2 w-40 h-auto sm:w-52 md:w-64 lg:w-72 opacity-15"
           alt="nuvem decorativa"
         />
       </div>
