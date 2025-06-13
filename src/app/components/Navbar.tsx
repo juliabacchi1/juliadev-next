@@ -89,7 +89,7 @@ export default function Navbar() {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
-            className="sm:hidden px-4 pb-4 pt-2"
+            className="sm:hidden backdrop-blur-md px-4 pb-4 pt-2"
           >
             <ul className="space-y-2">
               {menuItems.map((item) => (
