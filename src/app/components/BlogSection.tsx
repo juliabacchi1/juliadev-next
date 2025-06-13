@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { Card } from "./blog/Card";
-import { Cards } from "./blog/data/DataCards";
+import { DataCards } from "./blog/data/DataCards";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
 
@@ -25,7 +25,7 @@ export default function BlogSection() {
           activeCard !== null ? 2 : 4
         } gap-4 transition-all duration-300`}
       >
-        {Cards.map((card, index) => (
+        {DataCards.map((card, index) => (
           <Card
             key={index}
             title={card.title}
@@ -47,17 +47,15 @@ export default function BlogSection() {
             className="fixed top-0 right-0 w-full md:w-1/2 h-full bg-white shadow-xl z-50 p-6 flex flex-col"
           >
             <div className="flex justify-between items-center border-b pb-4">
-              <h3 className="text-2xl font-bold">{Cards[activeCard].title}</h3>
+              <h3 className="text-2xl font-bold uppercase tracking-widest">
+                {DataCards[activeCard].title}
+              </h3>
               <button onClick={handleClose}>
                 <X size={24} />
               </button>
             </div>
-            <div className="mt-6 text-gray-700">
-              <p>
-                Aqui você coloca o conteúdo relacionado ao card "
-                {Cards[activeCard].title}". Pode ser texto, imagens, links, o
-                que quiser!
-              </p>
+            <div className="mt-6 text-gray-700 leading-relaxed overflow-y-auto">
+              {DataCards[activeCard].content}
             </div>
           </motion.div>
         )}

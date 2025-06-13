@@ -9,11 +9,14 @@ import {
   Clapperboard,
 } from "lucide-react";
 
-export const Cards = [
+import AppsQueInspiram from "../contents/AppsQueInspiram";
+
+export const DataCards = [
   {
     title: "Apps que inspiram",
     bgColor: "#D8B4F8",
     icon: <Flower2 size={64} />,
+    content: <AppsQueInspiram />,
   },
   {
     title: "Leituras necessárias",
