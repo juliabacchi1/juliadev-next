@@ -68,7 +68,6 @@ export default function ContactSection() {
           </a>
         </div>
 
-        {/* Botão Blog */}
         <div className="flex justify-center mt-12 md:mt-16">
           <Button
             variant="default"

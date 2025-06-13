@@ -86,7 +86,8 @@ export default function TechSection() {
       className="w-full min-h-screen relative bg-gradient-to-br from-orange-100 via-amber-50 to-orange-100 flex flex-col items-center justify-center px-6 py-16 space-y-12"
     >
       <div className="absolute inset-0 w-full h-full z-0 pointer-events-none">
-        {/* Topo esquerda */}
+       
+        {/* Nuvens: Topo esquerda, topo direita, meio esquerda, meio direita abaixo, centro centralizada */}
         <Image
           src="/images/nuvem.webp"
           width={384}
@@ -94,8 +95,6 @@ export default function TechSection() {
           className="absolute top-10 left-8 w-48 h-auto sm:w-64 md:w-80 lg:w-96 opacity-40"
           alt="nuvem decorativa"
         />
-
-        {/* Topo direita */}
         <Image
           src="/images/nuvem.webp"
           width={384}
@@ -103,8 +102,6 @@ export default function TechSection() {
           className="absolute top-24 right-12 w-40 h-auto sm:w-56 md:w-72 lg:w-80 opacity-30 hidden md:block"
           alt="nuvem decorativa"
         />
-
-        {/* Meio esquerda */}
         <Image
           src="/images/nuvem.webp"
           width={384}
@@ -112,8 +109,6 @@ export default function TechSection() {
           className="absolute top-1/2 left-24 w-36 h-auto sm:w-48 md:w-60 lg:w-72 opacity-25 hidden md:block"
           alt="nuvem decorativa"
         />
-
-        {/* Meio direita mais abaixo */}
         <Image
           src="/images/nuvem.webp"
           width={384}
@@ -121,8 +116,6 @@ export default function TechSection() {
           className="absolute top-[65%] right-24 w-32 h-auto sm:w-40 md:w-52 lg:w-64 opacity-35"
           alt="nuvem decorativa"
         />
-
-        {/* Centro centralizada */}
         <Image
           src="/images/nuvem.webp"
           width={384}

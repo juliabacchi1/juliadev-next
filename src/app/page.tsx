@@ -3,6 +3,7 @@ import AboutSection from "./components/AboutSection";
 import TechSection from "./components/TechSection";
 import WorkSection from "./components/WorkSection";
 import ContactSection from "./components/ContactSection";
+import BlogSection from "./components/BlogSection";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <TechSection />
       <WorkSection />
       <ContactSection />
+      <BlogSection />
     </main>
   );
 }
