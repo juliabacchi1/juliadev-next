@@ -1,10 +1,10 @@
-import Image from "next/image";
 import { PostFooter } from "../PostFooter";
+import ImageWithLoading from "../ImageWithLoading";
 
 export default function LadoConsciente() {
   return (
     <div className="prose prose-neutral max-w-none">
-      <Image
+      <ImageWithLoading
         src="/images/LadoConsciente.avif"
         alt="Foguete apontado para cima"
         className="rounded-xl shadow-lg mb-6 object-cover h-72 w-full"

@@ -16,10 +16,10 @@ export default function BlogSection() {
   return (
     <section
       id="blog"
-      className="w-full min-h-screen px-6 py-10 relative bg-[#f9f3e8] flex flex-col items-center"
+      className="w-full min-h-screen px-6 py-10 relative bg-blogstyle flex flex-col items-center"
     >
       {/* Título */}
-      <h2 className="text-4xl md:text-5xl font-normal text-center mb-12 tracking-tight text-[#333] border-b border-[#e0d6c6] pb-4 w-max mx-auto px-8 font-serif leading-tight group">
+      <h2 className="text-4xl md:text-5xl font-normal text-center md:mb-12 tracking-tight text-[#333] border-b border-[#e0d6c6] pb-4 w-max mx-auto px-8 font-serif leading-tight group">
         <span className="italic mr-1 transition-all duration-300 group-hover:tracking-wider">
           Blog
         </span>

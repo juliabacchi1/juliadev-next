@@ -1,10 +1,10 @@
-import Image from "next/image";
 import { PostFooter } from "../PostFooter";
+import ImageWithLoading from "../ImageWithLoading";
 
 export default function SeriesImperdiveis() {
   return (
     <div className="prose prose-neutral max-w-none">
-      <Image
+      <ImageWithLoading
         src="/images/SeriesImperdiveis.avif"
         alt="Cenas abstratas representando séries impactantes"
         className="rounded-xl shadow-lg mb-6 object-cover h-72 w-full"
