@@ -113,9 +113,15 @@ const WorkSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: true, amount: 0.3 }}
+          style={{ touchAction: "pan-y" }}
         >
           {/* Imagem */}
-          <div className="relative w-full sm:w-1/2 h-[200px] sm:h-[250px] md:h-[400px] lg:h-[550px]">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="relative w-full sm:w-1/2 h-[200px] sm:h-[250px] md:h-[400px] lg:h-[550px]"
+          >
             <a
               href={link}
               target="_blank"
@@ -131,7 +137,7 @@ const WorkSection = () => {
                 sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
               />
             </a>
-          </div>
+          </motion.div>
 
           {/* Texto + botões */}
           <div className="w-full sm:w-1/2 flex flex-col justify-center">

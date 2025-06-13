@@ -37,7 +37,14 @@ export default function Navbar() {
           className="flex items-center space-x-3 cursor-pointer"
           onClick={() => setMenuOpen(false)}
         >
-          <Image src="/logo.svg" alt="Logo" width={32} height={32} />
+          <Image
+            src="/logo.svg"
+            alt="Logo"
+            width={32}
+            height={32}
+            className="w-8 h-8"
+            unoptimized
+          />
           <motion.span
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: scrolled ? 0 : 1, x: scrolled ? -20 : 0 }}

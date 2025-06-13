@@ -16,12 +16,19 @@ export default function BlogSection() {
   return (
     <section
       id="blog"
-      aria-labelledby="blog-title"
-      className="w-full min-h-screen px-6 py-10 relative bg-[#f9f3e8] flex justify-center"
+      className="w-full min-h-screen px-6 py-10 relative bg-[#f9f3e8] flex flex-col items-center"
     >
-      <h2 id="blog-title" className="sr-only">
-        Posts do Blog
+      {/* Título */}
+      <h2 className="text-4xl md:text-5xl font-normal text-center mb-12 tracking-tight text-[#333] border-b border-[#e0d6c6] pb-4 w-max mx-auto px-8 font-serif leading-tight group">
+        <span className="italic mr-1 transition-all duration-300 group-hover:tracking-wider">
+          Blog
+        </span>
+        <span className="font-medium not-italic  text-[#5a5a5a] transition-all duration-500 group-hover:text-[#333]">
+          Tech
+        </span>
       </h2>
+
+      {/* Cards */}
       <div
         className={`flex w-full max-w-7xl ${
           activeCard === null ? "items-center" : "items-start"
