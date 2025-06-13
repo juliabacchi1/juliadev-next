@@ -11,7 +11,7 @@ interface PostFooterProps {
 export function PostFooter({
   date,
   author = "Julia Bacchi",
-  authorLink = "https://juliadev.vercel.app",
+  authorLink = "https://juliabacchi.com",
   avatarSrc = "/images/avatar.webp",
 }: PostFooterProps) {
   return (

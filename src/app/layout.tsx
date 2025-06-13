@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: "Julia Bacchi | Front-end Developer",
     description:
       "Portfólio de Julia Bacchi - Desenvolvedora front-end com foco em React, Next.js e TailwindCSS.",
-    url: "https://juliadev.vercel.app",
+    url: "https://juliabacchi.com",
     type: "website",
     siteName: "Portfólio Julia Bacchi",
     images: "/og-image.jpg",
