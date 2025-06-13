@@ -63,7 +63,7 @@ export const DataCards = [
   },
   {
     title: "Esse post é sobre saúde mental",
-    bgColor: "#F6E3B9",
+    bgColor: "#e5c487",
     icon: <Heart size={64} />,
     content: <SaudeMental />,
   },

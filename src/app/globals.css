@@ -41,3 +41,17 @@ body {
     }
   }
 }
+
+@layer utilities {
+  @media (min-width: 400px) and (max-width: 500px) {
+    .devicebig-grid-responsive {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 810px) and (max-width: 840px) {
+    .ipad-grid-responsive {
+      grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    }
+  }
+}

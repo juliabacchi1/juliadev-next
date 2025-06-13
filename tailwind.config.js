@@ -17,6 +17,7 @@ module.exports = {
         aboutright: "#eea595",
         abouttext: "#ba4b2e",
         contactstyle: "#156669",
+        blogstyle: "#f9f3e8",
       },
     },
   },

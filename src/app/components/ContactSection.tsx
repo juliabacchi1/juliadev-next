@@ -75,7 +75,7 @@ export default function ContactSection() {
             onClick={() => {
               const section = document.getElementById("blog");
               if (section) {
-                section.scrollIntoView({ behavior: "smooth" });
+                section.scrollIntoView({ behavior: "smooth", block: "start" });
               }
             }}
           >

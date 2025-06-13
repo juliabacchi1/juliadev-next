@@ -16,24 +16,32 @@ export default function BlogSection() {
   return (
     <section
       id="blog"
-      className="w-full min-h-screen px-6 py-10 relative bg-[#fffdfc]"
+      aria-labelledby="blog-title"
+      className="w-full min-h-screen px-6 py-10 relative bg-[#f9f3e8] flex justify-center"
     >
-      <h2 className="text-4xl md:text-6xl mb-8 text-center">Blog</h2>
-
+      <h2 id="blog-title" className="sr-only">
+        Posts do Blog
+      </h2>
       <div
-        className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-${
-          activeCard !== null ? 2 : 4
-        } gap-4 transition-all duration-300`}
+        className={`flex w-full max-w-7xl ${
+          activeCard === null ? "items-center" : "items-start"
+        }`}
       >
-        {DataCards.map((card, index) => (
-          <Card
-            key={index}
-            title={card.title}
-            bgColor={card.bgColor}
-            icon={card.icon}
-            onClick={() => setActiveCard(index)}
-          />
-        ))}
+        <div
+          className={`grid w-full mt-10 md:mt-0 grid-cols-1 sm:grid-cols-2 gap-6 transition-all duration-300 ${
+            activeCard !== null ? "md:grid-cols-2" : "md:grid-cols-4"
+          } devicebig-grid-responsive ipad-grid-responsive`}
+        >
+          {DataCards.map((card, index) => (
+            <Card
+              key={index}
+              title={card.title}
+              bgColor={card.bgColor}
+              icon={card.icon}
+              onClick={() => setActiveCard(index)}
+            />
+          ))}
+        </div>
       </div>
 
       {/* Painel lateral */}

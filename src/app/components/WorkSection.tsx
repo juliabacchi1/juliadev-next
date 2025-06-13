@@ -77,7 +77,6 @@ const WorkSection = () => {
   return (
     <section
       id="trabalhos"
-      aria-labelledby="works-title"
       className="w-full min-h-screen bg-white text-gray-800 flex flex-col md:flex-row items-center md:justify-center px-6 py-16 md:py-0"
     >
       <div className="w-full md:w-[30%] md:my-2 md:mx-10 flex flex-col">
