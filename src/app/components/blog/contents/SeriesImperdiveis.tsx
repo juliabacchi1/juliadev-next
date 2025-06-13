@@ -33,7 +33,7 @@ export default function SeriesImperdiveis() {
         </li>
         <li>
           <strong>Severance / Ruptura (Apple TV+):</strong> Você aceitaria
-          dividir sua mente entre “trabalho” e “vida pessoal”? Em Severance,
+          dividir sua mente entre trabalho e vida pessoal? Em Severance,
           essa divisão é literal. Uma premissa genial que vai ganhando camadas e
           um desconforto crescente. É sobre trabalho, sim — mas também sobre
           identidade, trauma e fuga.

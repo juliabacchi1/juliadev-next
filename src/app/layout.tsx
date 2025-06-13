@@ -63,7 +63,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" />
 
-        <link rel="manifest" href="/favicon/site.webmanifest" />
+        <link rel="manifest" href="/favicon/manifest.json" />
         <link
           rel="mask-icon"
           href="/favicon/safari-pinned-tab.svg"
