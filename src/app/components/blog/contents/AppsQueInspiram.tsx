@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { PostFooter } from "../PosterFooter";
+import { PostFooter } from "../PostFooter";
 
 export default function AppsQueInspiram() {
   return (
