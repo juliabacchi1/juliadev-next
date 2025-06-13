@@ -19,7 +19,7 @@ export default function LadoConsciente() {
         </p>
 
         <p>
-          Como devs, a gente pode (e deve) construir produtos mais conscientes.
+          Como devs, a gente pode - e deve - construir produtos mais conscientes.
           E, muitas vezes, isso começa com pequenas escolhas no código. Aqui vão
           algumas ideias:
         </p>

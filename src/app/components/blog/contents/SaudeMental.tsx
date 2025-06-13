@@ -25,27 +25,27 @@ export default function SaudeMental() {
         <ol className="list-decimal list-inside space-y-4 pl-4 marker:text-pink-600 marker:font-bold">
           <li>
             <strong>
-              "Ah, mas programador não tem estresse…" (Só que não) 😅
+              &quot;Ah, mas programador não tem estresse…&quot; (Só que não) 😅
             </strong>
             <p>
-              Quem nunca ouviu que "trabalhar sentado é fácil" ou que "ficar no
-              ar-condicionado o dia todo não cansa"? Mas a gente sabe: pressão
-              por entregas, horas de telas, síndrome do impostor e aquele bug
-              que só aparece em produção são combustível perfeito para exaustão
-              mental.
+              Quem nunca ouviu que &quot;trabalhar sentado é fácil&quot; ou que
+              &quot;ficar no ar-condicionado o dia todo não cansa&quot;? Mas a
+              gente sabe: pressão por entregas, horas de telas, síndrome do
+              impostor e aquele bug que só aparece em produção são combustível
+              perfeito para exaustão mental.
             </p>
           </li>
 
           <li>
-            <strong>Os "ERROS" mais comuns (e como evitar)</strong>
+            <strong>Os &quot;ERROS&quot; mais comuns (e como evitar)</strong>
             <ul className="list-disc list-inside my-2 space-y-2">
               <li>
                 <strong>Burnout:</strong> Aquele cansaço que não passa, mesmo
                 depois do fim de semana.
               </li>
               <li>
-                <strong>Ansiedade:</strong> "E se meu código quebrar tudo
-                amanhã?" (Spoiler: já quebrou antes e você sobreviveu).
+                <strong>Ansiedade:</strong> &quot;E se meu código quebrar tudo
+                amanhã?&quot; (Spoiler: já quebrou antes e você sobreviveu).
               </li>
               <li>
                 <strong>Isolamento:</strong> Home office é ótimo, mas virar um
@@ -62,7 +62,7 @@ export default function SaudeMental() {
           </li>
 
           <li>
-            <strong>Ferramentas para "otimizar" a mente</strong>
+            <strong>Ferramentas para &quot;otimizar&quot; a mente</strong>
             <ul className="list-disc list-inside mt-2 space-y-2">
               <li>
                 <strong>Testes de sanidade mental:</strong> Apps como{" "}
@@ -92,7 +92,7 @@ export default function SaudeMental() {
               <li>
                 <strong>Pair Programming Social:</strong> Marque um café
                 (virtual ou presencial) com outros devs. Às vezes, desabafar com
-                quem entende o "commit que não vai" é terapia.
+                quem entende o &quot;commit que não vai&quot; é terapia.
               </li>
             </ul>
           </li>
@@ -100,16 +100,17 @@ export default function SaudeMental() {
           <li>
             <strong>Não é fraqueza, é humano 2.0</strong>
             <p>
-              Pedir ajuda, fazer terapia ou dizer "hoje não vou codar depois das
-              18h" não te faz menos profissional. Pelo contrário: um desenvolvedor com
-              mente saudável é mais produtivo, criativo e (de quebra) evita
-              aqueles bugs por cansaço.
+              Pedir ajuda, fazer terapia ou dizer &quot;hoje não vou codar
+              depois das 18h&quot; não te faz menos profissional. Pelo
+              contrário: um desenvolvedor com mente saudável é mais produtivo,
+              criativo e (de quebra) evita aqueles bugs por cansaço.
             </p>
           </li>
         </ol>
 
         <p className="font-semibold py-6">
-          E você? Já parou pra checar como tá sua mente hoje? Se cuidar também é parte do trabalho!
+          E você? Já parou pra checar como tá sua mente hoje? Se cuidar também é
+          parte do trabalho!
         </p>
 
         <pre className="bg-neutral-100 p-4 rounded-xl overflow-auto">

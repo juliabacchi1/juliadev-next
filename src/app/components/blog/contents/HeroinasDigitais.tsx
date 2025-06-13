@@ -30,8 +30,8 @@ export default function HeroinasDigitais() {
         </li>
         <li>
           <strong>Grace Hopper</strong> — Almirante da Marinha dos EUA e
-          criadora da linguagem COBOL. Também popularizou o termo “bug” na
-          programação.
+          criadora da linguagem COBOL. Também popularizou o termo
+          &quot;bug&quot; na programação.
         </li>
         <li>
           <strong>Radia Perlman</strong> — Criadora do protocolo Spanning Tree,
@@ -53,7 +53,8 @@ export default function HeroinasDigitais() {
       </ul>
       <div className="space-y-6 mb-4">
         <p>
-          É um caminho um tanto quanto mais largo, vamos admitir. Porém estas e outras histórias provam que tecnologia não tem gênero, e que o futuro
+          É um caminho um tanto quanto mais largo, vamos admitir. Porém estas e
+          outras histórias provam que tecnologia não tem gênero, e que o futuro
           da programação é cada vez mais diverso.
         </p>
         <p>

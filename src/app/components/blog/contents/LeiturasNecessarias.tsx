@@ -36,7 +36,7 @@ export default function LeiturasNecessarias() {
         <p>
           🎁 <strong>Bônus:</strong> <em>O Fim da Eternidade</em>, de Isaac
           Asimov — Um mergulho na manipulação do tempo e nas consequências de
-          tentar “melhorar” a humanidade.
+          tentar &quot;melhorar&quot; a humanidade.
         </p>
         <p>Uma leitura pra colocar os pés no chão... e ao mesmo tempo voar.</p>
       </div>

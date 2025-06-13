@@ -14,9 +14,10 @@ export default function DesignParaDevs() {
 
       <div className="space-y-6 mb-4">
         <p className="font-semibold">
-          Quando comecei no front-end, eu achava que “design” era só sobre cor e
-          ícone. Mas aos poucos entendi que saber um pouco de design me tornava
-          uma dev mais completa, e que isso fazia TODA a diferença no mercado.
+          Quando comecei no front-end, eu achava que &quot;design&quot; era só
+          sobre cor e ícone. Mas aos poucos entendi que saber um pouco de design
+          me tornava uma dev mais completa, e que isso fazia TODA a diferença no
+          mercado.
         </p>
 
         <p>

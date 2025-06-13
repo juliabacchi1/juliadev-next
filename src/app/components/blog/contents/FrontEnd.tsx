@@ -16,7 +16,7 @@ export default function FrontEnd() {
           Ser front-end é criar experiências que conectam pessoas à tecnologia.
         </p>
         <p>
-          Se você está começando (ou pensando em transição), aqui vão pontos
+          Se você está começando,ou pensando em transição, aqui vão pontos
           importantes que um front precisa, além da técnica:
         </p>
       </div>
