@@ -29,7 +29,7 @@ export default function AboutSection() {
           {/* Imagem apenas no mobile */}
           <div className="md:hidden w-full flex justify-center">
             <Image
-              src="/profile.png"
+              src="/profile.avif"
               alt="Foto de perfil de Júlia Bacchi"
               width={250}
               height={300}

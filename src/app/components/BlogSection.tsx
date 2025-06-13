@@ -5,6 +5,7 @@ import { Card } from "./blog/Card";
 import { DataCards } from "./blog/data/DataCards";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
+import Footer from "./Footer";
 
 export default function BlogSection() {
   const [activeCard, setActiveCard] = useState<number | null>(null);
@@ -75,6 +76,7 @@ export default function BlogSection() {
           </motion.div>
         )}
       </AnimatePresence>
+      <Footer />
     </section>
   );
 }
