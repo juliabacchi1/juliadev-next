@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌐 juliabacchi.com – Portfólio de Júlia Bacchi
 
-## Getting Started
+**juliabacchi.com** é o meu portfólio como desenvolvedora front-end, onde compartilho projetos, experiências, habilidades e conteúdos sobre tecnologia. Criado com **Next.js + TailwindCSS + Framer Motion**, o site é um reflexo da minha personalidade e do meu cuidado com **acessibilidade, performance e UI/UX**.
 
-First, run the development server:
+[![License](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/licenses/MIT)  
+[![Tech Stack](https://img.shields.io/badge/Tech%20Stack-Next.js%20%7C%20React%20%7C%20Tailwind-blue)](https://nextjs.org/)  
+[![Deploy](https://img.shields.io/badge/Deploy-Vercel-purple)](https://juliabacchi.com)  
+[![GitHub](https://img.shields.io/badge/GitHub-@juliabacchi1%2Fportfolio-black?logo=github)](https://github.com/juliabacchi1/portfolio)
+
+![Screenshot do Site](./public/screenshot.webp)
+
+---
+
+## 🛠️ Tecnologias
+
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Lucide Icons](https://lucide.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [MDX](https://mdxjs.com/)
+
+---
+
+## 🚀 Como rodar localmente
 
 ```bash
+git clone https://github.com/juliabacchi1/juliadev-next.git
+cd juliadev-next
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✨ Funcionalidades
+- 🧠 Destaque para tecnologias dominadas
+- 🖼️ Projetos em destaque com carrossel interativo
+- 📝 Blog com posts interativos sobre tecnologia e dia a dia
+- 🔍 Interface responsiva, acessível e com animações suaves
+- 💌 Seção de contato integrada com redes sociais e botão de navegação para o blog
+- 🌥️ Design criativo com fundo ilustrativo (como nuvens)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📂 Estrutura do projeto
 
-## Learn More
+```
+src/
+|
+app/
+├── components/
+│ ├── blog/             # Card principal, post footer
+│ │     └── contents/   # Conteúdo dos posts
+│ │     └── data/       # Dados extraídos para os posts
+│ │
+│ ├── AboutSection.tsx
+│ ├── BlogSection.tsx
+│ ├── Button.tsx
+│ ├── ContactSection.tsx
+│ ├── HeroSection.tsx
+│ ├── NavBar.tsx
+│ ├── TechSection.tsx
+│ ├── WorkSection.tsx
+│ └── Footer.tsx
+│
+├── layout.tsx
+└── page.tsx
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 🧩 Próximos passos
+- 🛎️ Adicionar dark mode
+- 🧠 Publicar mais conteúdos técnicos sobre front-end e carreira dev
+- 📈 Adicionar analytics para acompanhar acessos
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 💡 Visão e identidade
+Este portfólio representa meu momento atual como desenvolvedora e criadora. Busquei um design que unisse leveza visual com tecnologia moderna, refletindo minha paixão por inovação, criatividade, sustentabilidade e pessoas. Cada detalhe – dos ícones aos textos – foi pensado para contar um pouco da minha história.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🙋‍♀️ Feito por
+Julia Bacchi – desenvolvedora front-end apaixonada por tecnologia, natureza, criatividade e bons desafios.
+[LinkedIn](https://www.linkedin.com/in/juliabacchi/) | [Portfólio](https://juliabacchi.com)
 
-## Deploy on Vercel
+## 🪄 Contribuições
+Se quiser sugerir melhorias, abrir issues ou simplesmente trocar uma ideia, fique à vontade! Toda troca é bem-vinda. 💛
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 Licença
+MIT © Júlia Bacchi
