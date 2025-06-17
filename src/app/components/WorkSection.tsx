@@ -9,6 +9,14 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const WorkSection = () => {
   const projects = [
     {
+      name: "Landing page Oficial",
+      description:
+        "Landing page dos meus serviços como desenvolvedora. Design focado em conversão, com CMS headless para gestão de conteúdo. Feita com Next.js, TailwindCSS e Sanity CMS.",
+      view: "/images/landings.webp",
+      alt: "Visualização Bora!",
+      link: "https://landings-julia.vercel.app/",
+    },
+    {
       name: "Bora!",
       description:
         "App de checklist de viagem com interface visual intuitiva. Organize itens por categorias e facilite o planejamento da sua próxima aventura. Feito com React, Vite e TailwindCSS.",
