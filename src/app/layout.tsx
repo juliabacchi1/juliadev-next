@@ -26,6 +26,7 @@ export const metadata: Metadata = {
     "TailwindCSS",
     "portfólio Julia Bacchi",
   ],
+  metadataBase: new URL("https://juliabacchi.com"),
   openGraph: {
     title: "Julia Bacchi | Front-end Developer",
     description:

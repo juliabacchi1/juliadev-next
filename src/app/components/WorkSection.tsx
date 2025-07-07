@@ -13,8 +13,16 @@ const WorkSection = () => {
       description:
         "Landing page dos meus serviços como desenvolvedora. Design focado em conversão, com CMS headless para gestão de conteúdo. Feita com Next.js, TailwindCSS e Sanity CMS.",
       view: "/images/landings.webp",
-      alt: "Visualização Bora!",
+      alt: "Visualização Landing page Oficial",
       link: "https://landings-julia.vercel.app/",
+    },
+    {
+      name: "Landing page Ebook Tarot",
+      description:
+        "Landing page para venda de ebook. Design intuitivo, pensado na conexão emocional com o público. Criado em Next.js com integração de analytics e efeitos interativos.",
+      view: "/images/ebook.webp",
+      alt: "Visualização Landing page Ebook Tarot",
+      link: "https://portal-darkmoon.vercel.app/ebook-vivenciando-os-arcanos",
     },
     {
       name: "Bora!",
