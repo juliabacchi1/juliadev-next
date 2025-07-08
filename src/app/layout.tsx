@@ -2,6 +2,9 @@ import "./globals.css";
 import { Gloock, Montserrat } from "next/font/google";
 import type { Metadata } from "next";
 import Navbar from "./components/Navbar";
+import Script from "next/script";
+
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -23,6 +26,8 @@ export const metadata: Metadata = {
     "desenvolvimento front-end",
     "React",
     "Next.js",
+    "Portfolio desenvolvedor",
+    "Desenvolvedor front-end",
     "TailwindCSS",
     "portfólio Julia Bacchi",
   ],
@@ -84,6 +89,31 @@ export default function RootLayout({
           sizes="512x512"
           href="/favicon/favicon-512x512.png"
         />
+
+        {/* Script GA */}
+        {GA_ID && (
+          <>
+            <Script
+              strategy="afterInteractive"
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+            />
+            <Script
+              id="google-analytics"
+              strategy="afterInteractive"
+              dangerouslySetInnerHTML={{
+                __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){window.dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${GA_ID}', {
+            page_path: window.location.pathname,
+            debug_mode: ${process.env.NODE_ENV === "development"}
+          });
+        `,
+              }}
+            />
+          </>
+        )}
       </head>
       <body>
         <Navbar />
