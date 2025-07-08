@@ -32,6 +32,9 @@ export function Card({ title, bgColor, icon, onClick }: CardProps) {
 
       <motion.button
         onClick={onClick}
+        data-analytics={`blog_card_${title
+          .toLowerCase()
+          .replace(/\s+/g, "")}_click`}
         whileHover={{ scale: 1.2, boxShadow: "0 0 8px rgba(0,0,0,0.3)" }}
         transition={{ type: "spring", stiffness: 400 }}
         className="absolute top-2 right-2 bg-white text-gray-800 rounded-full w-7 h-7 flex items-center justify-center shadow cursor-pointer"

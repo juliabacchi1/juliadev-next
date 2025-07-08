@@ -35,6 +35,7 @@ export default function ContactSection() {
             rel="noopener noreferrer"
             aria-label="Contato via WhatsApp"
             className="transition-transform duration-300 hover:scale-110 hover:text-green-500 p-2"
+            data-analytics="contact_whatsapp_click"
           >
             <Headset className="w-6 h-6 md:w-7 md:h-7" />
           </a>
@@ -45,6 +46,7 @@ export default function ContactSection() {
             rel="noopener noreferrer"
             aria-label="Perfil no GitHub"
             className="transition-transform duration-300 hover:scale-110 hover:text-gray-600 p-2"
+            data-analytics="contact_github_click"
           >
             <Github className="w-6 h-6 md:w-7 md:h-7" />
           </a>
@@ -55,6 +57,7 @@ export default function ContactSection() {
             rel="noopener noreferrer"
             aria-label="Perfil no LinkedIn"
             className="transition-transform duration-300 hover:scale-110 hover:text-blue-600 p-2"
+            data-analytics="contact_linkedin_click"
           >
             <Linkedin className="w-6 h-6 md:w-7 md:h-7" />
           </a>
@@ -63,6 +66,7 @@ export default function ContactSection() {
             href="mailto:juliabacchi92@gmail.com"
             aria-label="Enviar e-mail"
             className="transition-transform duration-300 hover:scale-110 hover:text-red-500 p-2"
+            data-analytics="contact_email_click"
           >
             <Send className="w-6 h-6 md:w-7 md:h-7" />
           </a>
@@ -72,6 +76,7 @@ export default function ContactSection() {
           <Button
             variant="default"
             className="w-full max-w-[200px] py-3 text-sm md:text-base"
+            data-analytics="contact_blog_click"
             onClick={() => {
               const section = document.getElementById("blog");
               if (section) {

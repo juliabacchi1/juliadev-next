@@ -86,7 +86,6 @@ export default function TechSection() {
       className="w-full min-h-screen relative bg-gradient-to-br from-orange-100 via-amber-50 to-orange-100 flex flex-col items-center justify-center px-6 py-16 space-y-12"
     >
       <div className="absolute inset-0 w-full h-full z-0 pointer-events-none">
-       
         {/* Nuvens: Topo esquerda, topo direita, meio esquerda, meio direita abaixo, centro centralizada */}
         <Image
           src="/images/nuvem.webp"
@@ -174,6 +173,7 @@ export default function TechSection() {
           <Button
             variant="default"
             className="w-3/4 md:w-full md:max-w-[200px]"
+            data-analytics="tech_trabalhos_click"
             onClick={() => {
               const section = document.getElementById("trabalhos");
               if (section) {

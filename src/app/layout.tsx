@@ -3,6 +3,7 @@ import { Gloock, Montserrat } from "next/font/google";
 import type { Metadata } from "next";
 import Navbar from "./components/Navbar";
 import Script from "next/script";
+import Analytics from "./components/Analytics";
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
@@ -118,6 +119,7 @@ export default function RootLayout({
       <body>
         <Navbar />
         {children}
+        <Analytics />
       </body>
     </html>
   );

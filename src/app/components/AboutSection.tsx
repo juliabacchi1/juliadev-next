@@ -56,6 +56,7 @@ export default function AboutSection() {
             <Button
               variant="red"
               className="flex-1"
+              data-analytics="about_tecnologias_click"
               onClick={() => {
                 const section = document.getElementById("tecnologias");
                 if (section) {
@@ -68,6 +69,7 @@ export default function AboutSection() {
             <Button
               variant="pink"
               className="flex-1 hidden md:inline-flex"
+              data-analytics="about_me_chama_click"
               onClick={() => {
                 const section = document.getElementById("contato");
                 if (section) {

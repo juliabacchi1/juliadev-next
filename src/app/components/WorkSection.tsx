@@ -109,6 +109,7 @@ const WorkSection = () => {
           <Button
             variant="work"
             className="w-3/4 md:w-full md:max-w-[200px]"
+            data-analytics="work_me_chama_click"
             onClick={() => {
               const section = document.getElementById("contato");
               if (section) {
@@ -143,6 +144,9 @@ const WorkSection = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full h-full"
+              data-analytics={`work_project_${name
+                .toLowerCase()
+                .replace(/\s+/g, "")}_click`}
             >
               <Image
                 src={view}
@@ -191,6 +195,7 @@ const WorkSection = () => {
         <Button
           variant="work"
           className="w-3/4 max-w-xs"
+          data-analytics="work_me_chama_click"
           onClick={() => {
             const section = document.getElementById("contato");
             if (section) {

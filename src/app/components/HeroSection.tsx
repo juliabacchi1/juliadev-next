@@ -59,6 +59,7 @@ export default function HeroSection() {
             <Button
               variant="default"
               className="flex-1"
+              data-analytics="sobre_mim_click"
               onClick={() =>
                 document
                   .getElementById("sobre")
@@ -73,6 +74,7 @@ export default function HeroSection() {
               href="/curriculo.pdf"
               target="_blank"
               rel="noopener noreferrer"
+              data-analytics="curriculo_click"
             >
               currículo
             </Button>
@@ -110,6 +112,7 @@ export default function HeroSection() {
           href="/curriculo.pdf"
           target="_blank"
           rel="noopener noreferrer"
+          data-analytics="curriculo_floating_click"
           className="flex items-center gap-2 px-4 py-2 bg-gray-800/80 text-white rounded-full shadow-lg text-sm font-medium hover:bg-gray-700 transition"
         >
           <Download size={20} />
