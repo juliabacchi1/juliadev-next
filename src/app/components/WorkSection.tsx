@@ -22,7 +22,15 @@ const WorkSection = () => {
         "Landing page para venda de ebook. Design intuitivo, pensado na conexão emocional com o público. Criado em Next.js com integração de analytics e efeitos interativos.",
       view: "/images/ebook.webp",
       alt: "Visualização Landing page Ebook Tarot",
-      link: "https://portal-darkmoon.vercel.app/ebook-vivenciando-os-arcanos",
+      link: "https://portaldarkmoon.com/ebook-vivenciando-os-arcanos",
+    },
+    {
+      name: "Site MXM Manutenção",
+      description:
+        "Site institucional para empresa de climatização, focado em apresentar serviços, contato rápido e confiabilidade. Desenvolvido com Next.js para performance e design responsivo.",
+      view: "/images/mxm.webp",
+      alt: "Visualização do site MXM Manutenção",
+      link: "https://mxm-manutencao.vercel.app/",
     },
     {
       name: "Bora!",
@@ -38,7 +46,7 @@ const WorkSection = () => {
         "Site institucional moderno e responsivo, desenvolvido com foco em performance e identidade visual impactante. Construído com Next.js e TailwindCSS.",
       view: "/images/darkmoon.webp",
       alt: "Visualização DarkMoon",
-      link: "https://portal-darkmoon.vercel.app/",
+      link: "https://portaldarkmoon.com/",
     },
     {
       name: "Portal Rick and Morty",
