@@ -1,9 +1,0 @@
-{
-  "redirects": [
-    {
-      "source": "/(.*)",
-      "destination": "https://juliabacchi.com/$1",
-      "statusCode": 301
-    }
-  ]
-}
