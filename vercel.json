@@ -3,12 +3,6 @@
     {
       "source": "/(.*)",
       "destination": "https://juliabacchi.com/$1",
-      "has": [
-        {
-          "type": "protocol",
-          "value": "http"
-        }
-      ],
       "statusCode": 301
     }
   ]
