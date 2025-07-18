@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://juliabacchi.com
+
+# Sitemaps
+Sitemap: https://juliabacchi.com/sitemap.xml
