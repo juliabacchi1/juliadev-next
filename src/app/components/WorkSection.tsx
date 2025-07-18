@@ -6,82 +6,82 @@ import Image from "next/image";
 import Button from "./Button";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const WorkSection = () => {
-  const projects = [
-    {
-      name: "Landing page Oficial",
-      description:
-        "Landing page dos meus serviços como desenvolvedora. Design focado em conversão, com CMS headless para gestão de conteúdo. Feita com Next.js, TailwindCSS e Sanity CMS.",
-      view: "/images/landings.webp",
-      alt: "Visualização Landing page Oficial",
-      link: "https://landings-julia.vercel.app/",
-    },
-    {
-      name: "Landing page Ebook Tarot",
-      description:
-        "Landing page para venda de ebook. Design intuitivo, pensado na conexão emocional com o público. Criado em Next.js com integração de analytics e efeitos interativos.",
-      view: "/images/ebook.webp",
-      alt: "Visualização Landing page Ebook Tarot",
-      link: "https://portaldarkmoon.com/ebook-vivenciando-os-arcanos",
-    },
-    {
-      name: "Site MXM Manutenção",
-      description:
-        "Site institucional para empresa de climatização, focado em apresentar serviços, contato rápido e confiabilidade. Desenvolvido com Next.js para performance e design responsivo.",
-      view: "/images/mxm.webp",
-      alt: "Visualização do site MXM Manutenção",
-      link: "https://mxm-manutencao.vercel.app/",
-    },
-    {
-      name: "Bora!",
-      description:
-        "App de checklist de viagem com interface visual intuitiva. Organize itens por categorias e facilite o planejamento da sua próxima aventura. Feito com React, Vite e TailwindCSS.",
-      view: "/images/bora.webp",
-      alt: "Visualização Bora!",
-      link: "https://bora-app-jet.vercel.app/",
-    },
-    {
-      name: "DarkMoon",
-      description:
-        "Site institucional moderno e responsivo, desenvolvido com foco em performance e identidade visual impactante. Construído com Next.js e TailwindCSS.",
-      view: "/images/darkmoon.webp",
-      alt: "Visualização DarkMoon",
-      link: "https://portaldarkmoon.com/",
-    },
-    {
-      name: "Portal Rick and Morty",
-      description:
-        "Plataforma interativa com quiz, galeria e gamificação. Consome API, usa filtros e gerenciamento de estado global. Experiência divertida e responsiva, feita com React.",
-      view: "/images/rickandmorty.webp",
-      alt: "Visualização Portal Rick and Morty",
-      link: "https://portal-rickandmorty.vercel.app/",
-    },
-    {
-      name: "ecotasks",
-      description:
-        "Desafios sustentáveis para transformar hábitos e reduzir a pegada de carbono. Focado em ações diárias práticas, com design leve e acessível. Desenvolvido com React.",
-      view: "/images/ecotasks.webp",
-      alt: "Visualização ecotasks",
-      link: "https://ecotasks.vercel.app/",
-    },
-    {
-      name: "Rota Baleia Franca",
-      description:
-        "Landing page informativa para rota turística no litoral catarinense. Estrutura acessível, responsiva e com carregamento otimizado. Criada com WordPress.",
-      view: "/images/rotabaleia.webp",
-      alt: "Visualização Baleia Franca",
-      link: "https://rotabaleiafranca.com.br/",
-    },
-    {
-      name: "Kitchen Assistant",
-      description:
-        "Gere receitas com ajuda de IA a partir dos ingredientes disponíveis. Projeto que une criatividade e tecnologia com uso da API da OpenAI. Feito com JavaScript.",
-      view: "/images/recipes.webp",
-      alt: "Visualização Recipes Generator",
-      link: "https://recipes-generator-ai.netlify.app/",
-    },
-  ];
+const projects = [
+  {
+    name: "Landing page Oficial",
+    description:
+      "Landing page dos meus serviços como desenvolvedora. Design focado em conversão, com CMS headless para gestão de conteúdo. Feita com Next.js, TailwindCSS e Sanity CMS.",
+    view: "/images/landings.webp",
+    alt: "Visualização Landing page Oficial",
+    link: "https://landings-julia.vercel.app/",
+  },
+  {
+    name: "Landing page Ebook Tarot",
+    description:
+      "Landing page para venda de ebook. Design intuitivo, pensado na conexão emocional com o público. Criado em Next.js com integração de analytics e efeitos interativos.",
+    view: "/images/ebook.webp",
+    alt: "Visualização Landing page Ebook Tarot",
+    link: "https://portaldarkmoon.com/ebook-vivenciando-os-arcanos",
+  },
+  {
+    name: "Site MXM Manutenção",
+    description:
+      "Site institucional para empresa de climatização, focado em apresentar serviços, contato rápido e confiabilidade. Desenvolvido com Next.js para performance e design responsivo.",
+    view: "/images/mxm.webp",
+    alt: "Visualização do site MXM Manutenção",
+    link: "https://mxm-manutencao.vercel.app/",
+  },
+  {
+    name: "Bora!",
+    description:
+      "App de checklist de viagem com interface visual intuitiva. Organize itens por categorias e facilite o planejamento da sua próxima aventura. Feito com React, Vite e TailwindCSS.",
+    view: "/images/bora.webp",
+    alt: "Visualização Bora!",
+    link: "https://bora-app-jet.vercel.app/",
+  },
+  {
+    name: "DarkMoon",
+    description:
+      "Site institucional moderno e responsivo, desenvolvido com foco em performance e identidade visual impactante. Construído com Next.js e TailwindCSS.",
+    view: "/images/darkmoon.webp",
+    alt: "Visualização DarkMoon",
+    link: "https://portaldarkmoon.com/",
+  },
+  {
+    name: "Portal Rick and Morty",
+    description:
+      "Plataforma interativa com quiz, galeria e gamificação. Consome API, usa filtros e gerenciamento de estado global. Experiência divertida e responsiva, feita com React.",
+    view: "/images/rickandmorty.webp",
+    alt: "Visualização Portal Rick and Morty",
+    link: "https://portal-rickandmorty.vercel.app/",
+  },
+  {
+    name: "ecotasks",
+    description:
+      "Desafios sustentáveis para transformar hábitos e reduzir a pegada de carbono. Focado em ações diárias práticas, com design leve e acessível. Desenvolvido com React.",
+    view: "/images/ecotasks.webp",
+    alt: "Visualização ecotasks",
+    link: "https://ecotasks.vercel.app/",
+  },
+  {
+    name: "Rota Baleia Franca",
+    description:
+      "Landing page informativa para rota turística no litoral catarinense. Estrutura acessível, responsiva e com carregamento otimizado. Criada com WordPress.",
+    view: "/images/rotabaleia.webp",
+    alt: "Visualização Baleia Franca",
+    link: "https://rotabaleiafranca.com.br/",
+  },
+  {
+    name: "Kitchen Assistant",
+    description:
+      "Gere receitas com ajuda de IA a partir dos ingredientes disponíveis. Projeto que une criatividade e tecnologia com uso da API da OpenAI. Feito com JavaScript.",
+    view: "/images/recipes.webp",
+    alt: "Visualização Recipes Generator",
+    link: "https://recipes-generator-ai.netlify.app/",
+  },
+];
 
+const WorkSection = () => {
   const [index, setIndex] = useState(0);
   const { name, description, view, alt, link } = projects[index];
 
