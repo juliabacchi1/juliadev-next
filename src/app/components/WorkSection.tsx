@@ -16,6 +16,14 @@ const projects = [
     link: "https://landings-julia.vercel.app/",
   },
   {
+    name: "Landing page GB Mentorias",
+    description:
+      "Landing page orientada a vendas, construída em WordPress com backend customizado para gestão simplificada. Otimizada para performance, conversão, usabilidade e SEO.",
+    view: "/images/gisele.webp",
+    alt: "Visualização Gisele Batista Mentora",
+    link: "https://giselebatistamentora.com.br/",
+  },
+  {
     name: "Landing page Ebook Tarot",
     description:
       "Landing page para venda de ebook. Design intuitivo, pensado na conexão emocional com o público. Criado em Next.js com integração de analytics e efeitos interativos.",
