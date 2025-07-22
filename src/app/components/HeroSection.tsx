@@ -71,7 +71,7 @@ export default function HeroSection() {
             <Button
               variant="gray"
               className="flex-1 hidden md:inline-flex"
-              href="/curriculo.pdf"
+              href="/JuliaBacchi_DesenvolvedoraFrontEnd_2025.pdf"
               target="_blank"
               rel="noopener noreferrer"
               data-analytics="curriculo_click"
@@ -109,7 +109,7 @@ export default function HeroSection() {
         transition={{ delay: 0.6 }}
       >
         <a
-          href="/curriculo.pdf"
+          href="/JuliaBacchi_DesenvolvedoraFrontEnd_2025.pdf"
           target="_blank"
           rel="noopener noreferrer"
           data-analytics="curriculo_floating_click"
